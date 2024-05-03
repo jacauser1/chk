@@ -23,7 +23,7 @@ def pegarItem(data, esquerda, direita):
 def criarTask():
     key = rkey()
     data = {
-        "clientKey": "409154ed879c9e41c25703a6f92289bd",
+        "clientKey": "mkallister30@gmail.com ",
         "task": {
             "type": "RecaptchaV2TaskProxyless",
             "websiteURL": f"https://www.payzer.com/Payment/ExternalMake/businessId/{key}",
@@ -35,7 +35,7 @@ def criarTask():
     )
     taskId = criar.json()["taskId"]
     while True:
-        data = {"clientKey": "409154ed879c9e41c25703a6f92289bd", "taskId": taskId}
+        data = {"clientKey": "mkallister30@gmail.com ", "taskId": taskId}
         resultado = requests.post(
             "https://api.capmonster.cloud/getTaskResult", verify=False, json=data
         )
@@ -138,7 +138,7 @@ def checker(card, month, year, cvv):
         
         
         if response.status_code == 200:
-            p = {'https': 'http://brd-customer-hl_b12cf4ef-zone-rdpremium-country-us:qj77tznsi49h@brd.superproxy.io:22225', 'http':'http://brd-customer-hl_b12cf4ef-zone-rdpremium-country-us:qj77tznsi49h@brd.superproxy.io:22225'}
+            p = {'https': 'http://brd-customer-hl_b12cf4ef-zone-privado-country-us:radask10@brd.superproxy.io:22225', 'http':'http://brd-customer-hl_b12cf4ef-zone-privado-country-us:radask10@brd.superproxy.io:22225'}
             start_time = time.time() 
             key = rkey()
             url = f"https://www.payzer.com/Payment/ExternalMake/businessId/{key}"
