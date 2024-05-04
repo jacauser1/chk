@@ -23,7 +23,7 @@ def pegarItem(data, esquerda, direita):
 def criarTask():
     key = rkey()
     data = {
-        "clientKey": "mkallister30@gmail.com ",
+        "clientKey": "f8c955cca358a26825b5c24bf0867d1c",
         "task": {
             "type": "RecaptchaV2TaskProxyless",
             "websiteURL": f"https://www.payzer.com/Payment/ExternalMake/businessId/{key}",
@@ -35,7 +35,7 @@ def criarTask():
     )
     taskId = criar.json()["taskId"]
     while True:
-        data = {"clientKey": "mkallister30@gmail.com ", "taskId": taskId}
+        data = {"clientKey": "f8c955cca358a26825b5c24bf0867d1c", "taskId": taskId}
         resultado = requests.post(
             "https://api.capmonster.cloud/getTaskResult", verify=False, json=data
         )
