@@ -383,7 +383,7 @@ def processar_cartoes(card,mes,ano,cvv):
             
 @app.route('/', methods=['GET'])
 def iniciarChk():
-    return "@Engenieiro"
+    return "Checker: Online"
 
 
 @app.route('/chk', methods=['GET'])
